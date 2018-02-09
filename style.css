@@ -1,3 +1,8 @@
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,11 +35,12 @@ nav > ul {
   justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
 }
 
 nav > ul > li {
   display: inline-block;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 nav > ul > li > a {
@@ -51,7 +57,7 @@ nav > ul > li > a:hover {
 }
 
 header {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,14 +80,43 @@ header {
 
 #header-text {
   text-align: center;
+  color: #FFF; 
+  font-family: 'Open Sans', 'Helvetica', sans-serif; 
 }
 
 #header-text > h1 {
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 56px;
+  margin-bottom: 14px;
+  text-shadow: 2px 2px #000;
 }
 
 #header-text > h4 {
   text-transform: capitalize;
-  font-size: 24x;
+  font-size: 28px;
+  text-shadow: 1px 1px #000;
+}
+
+#section-1 {
+  height: auto;
+  width: 100%;
+}
+
+#col-3 {
+  width: 33.33333%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+.card {
+  width: 100%;
+}
+
+.img-holder {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100px;
 }
