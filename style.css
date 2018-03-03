@@ -102,21 +102,33 @@ header {
   width: 100%;
 }
 
-#col-3 {
-  width: 33.33333%;
-  float: left;
-  position: relative;
-  min-height: 1px;
+.col-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }
 
 .card {
   width: 100%;
 }
 
-.img-holder {
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+}
+
+.img-response {
+  display: inline-block;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section1 {
+  padding-top: 20px;
 }
