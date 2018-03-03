@@ -57,7 +57,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/header.jpeg');
+  background-image: url('./images/header.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
