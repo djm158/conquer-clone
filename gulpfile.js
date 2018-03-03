@@ -6,11 +6,11 @@ const reload = browserSync.reload;
 gulp.task('serve', () => {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: './dist'
     }
   });
 
-  gulp.watch('index.html', reload);
+  gulp.watch('index.html', ['build']).on('change', reload);
   gulp.watch('style.css', ['prefix']);
 })
 
@@ -24,3 +24,10 @@ gulp.task('prefix', () => {
     .pipe(reload({stream: true}));
 })
 
+gulp.task('build', () => {
+  gulp.src('./index.html')
+    .pipe(gulp.dest('dist'))
+
+  gulp.src('images/*')
+    .pipe(gulp.dest('dist/images'))
+})
