@@ -13,3 +13,5 @@ gulp is configured to autoprefix css and live reload when style.css or index.htm
 ```sh
 $ gulp serve
 ```
+
+[See live on Github pages](https://djm158.github.io/conquer-clone/)
